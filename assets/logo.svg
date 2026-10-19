@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Hassan Fish Store logo">
+  <defs>
+    <radialGradient id="hfs-water" cx="50%" cy="30%" r="75%">
+      <stop offset="0" stop-color="#2a8ae8"/>
+      <stop offset="0.55" stop-color="#0b4a9e"/>
+      <stop offset="1" stop-color="#041a45"/>
+    </radialGradient>
+    <linearGradient id="hfs-ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffd27a"/>
+      <stop offset="0.5" stop-color="#ff7a52"/>
+      <stop offset="1" stop-color="#e8402a"/>
+    </linearGradient>
+    <linearGradient id="hfs-red" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff6a45"/>
+      <stop offset="1" stop-color="#d4231b"/>
+    </linearGradient>
+    <!-- koi facing up, head at the top, body curving into a flowing tail -->
+    <path id="hfs-body" d="M0,-27 C7,-27 9.5,-17 7.5,-6 C6,3 6,11 4.5,18 C4,20 3,21 2,22 L-2,22 C-3.5,19 -5,13 -7,5 C-9.5,-6 -8,-27 0,-27 Z"/>
+    <path id="hfs-tail" d="M0,20 C5,24 11,27 16,34 C11,33 7,31 3,29 C2,32 0,35 -4,38 C-4,32 -3,26 -1,21 Z"/>
+    <path id="hfs-fin" d="M0,0 C5,-1 10,2 12,7 C8,7 4,5 0,3 Z"/>
+  </defs>
+
+  <circle cx="50" cy="50" r="47" fill="url(#hfs-water)"/>
+  <circle cx="50" cy="50" r="45.5" fill="none" stroke="url(#hfs-ring)" stroke-width="3"/>
+  <circle cx="50" cy="50" r="40" fill="none" stroke="#bfe6ff" stroke-opacity="0.18" stroke-width="0.8"/>
+
+  <!-- light rays -->
+  <path d="M38 5 L30 60 L36 60 Z M55 4 L52 62 L57 62 Z M70 8 L66 58 L70 58 Z" fill="#ffffff" opacity="0.06"/>
+
+  <!-- red koi -->
+  <g transform="translate(35 53) rotate(-28) scale(0.78)">
+    <use href="#hfs-fin" transform="translate(7 -9)" fill="#ffffff" opacity="0.75"/>
+    <use href="#hfs-fin" transform="translate(-7 -9) scale(-1 1)" fill="#ffffff" opacity="0.75"/>
+    <use href="#hfs-tail" fill="#ffffff" opacity="0.85"/>
+    <use href="#hfs-body" fill="url(#hfs-red)"/>
+    <path d="M-7,-4 C-3,-7 3,-6 7.5,-1 C5,4 0,5 -6,3 Z" fill="#fbf6ee"/>
+    <path d="M-3,10 C0,8 3,9 4.5,12 C2,15 -1,15 -3,13 Z" fill="#fbf6ee"/>
+    <circle cx="-3.2" cy="-20" r="1.1" fill="#1a0a08"/>
+    <circle cx="3.2" cy="-20" r="1.1" fill="#1a0a08"/>
+  </g>
+
+  <!-- white koi -->
+  <g transform="translate(65 47) rotate(152) scale(0.78)">
+    <use href="#hfs-fin" transform="translate(7 -9)" fill="#ffffff" opacity="0.75"/>
+    <use href="#hfs-fin" transform="translate(-7 -9) scale(-1 1)" fill="#ffffff" opacity="0.75"/>
+    <use href="#hfs-tail" fill="#ffffff" opacity="0.85"/>
+    <use href="#hfs-body" fill="#fbf6ee"/>
+    <path d="M-5,-23 C-2,-27 3,-27 5,-22 C5,-17 0,-15 -4,-17 Z" fill="#e8402a"/>
+    <path d="M-6,0 C-3,-4 3,-3 6,1 C4,6 -2,7 -6,4 Z" fill="#e8402a"/>
+    <circle cx="-3.2" cy="-20" r="1.1" fill="#1a0a08"/>
+    <circle cx="3.2" cy="-20" r="1.1" fill="#1a0a08"/>
+  </g>
+
+  <!-- bubbles -->
+  <circle cx="22" cy="30" r="2" fill="none" stroke="#dff3ff" stroke-width="0.9" opacity="0.8"/>
+  <circle cx="27" cy="23" r="1.3" fill="none" stroke="#dff3ff" stroke-width="0.8" opacity="0.6"/>
+  <circle cx="78" cy="72" r="1.5" fill="none" stroke="#dff3ff" stroke-width="0.8" opacity="0.6"/>
+</svg>
